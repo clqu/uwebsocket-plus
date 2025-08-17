@@ -1,0 +1,20 @@
+{
+	"name": "uwebsocket-plus",
+	"version": "0.0.2",
+	"description": "A powerful, plugin-based WebSocket library built on top of Elysia with TypeScript support. UWebSocket+ provides a advanced room management, real-time messaging, and extensible plugin architecture.",
+	"module": "index.ts",
+	"type": "module",
+	"devDependencies": {
+		"@types/bun": "latest"
+	},
+	"peerDependencies": {
+		"typescript": "^5"
+	},
+	"dependencies": {
+		"elysia": "^1.3.8",
+		"uuid": "^11.1.0"
+	},
+	"files": [
+		"README.md"
+	]
+}
