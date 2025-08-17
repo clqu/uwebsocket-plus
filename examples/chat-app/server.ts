@@ -1,6 +1,5 @@
 import { Elysia } from "elysia";
-import { Plugin } from "../../src/plugin-builder";
-import { Websocket } from "../../src/websocket";
+import { Plugin, Websocket } from "uwebsocket-plus";
 
 const names = ["John", "Jane", "Doe", "Smith", "Williams", "Brown", "Jones", "Garcia", "Miller", "Davis"];
 const surnames = ["Doe", "Smith", "Williams", "Brown", "Jones", "Garcia", "Miller", "Davis"];
@@ -92,7 +91,7 @@ ws.create("/:roomId", (route) => {
 
 new Elysia()
 	.use(ws.getElysia())
-	.get("/", () => Bun.file("./index.html"))
+	.get("/", () => Bun.file("./examples/chat-app/index.html"))
 	.listen(3000, () => {
 		console.log("Server is running on port http://localhost:3000");
 	});

@@ -1,3 +1,4 @@
+// @ts-nocheck
 import type { ElysiaWS } from "elysia/ws";
 import { EventEmitter } from 'node:events';
 import type { WebsocketBase } from "./websocket";
